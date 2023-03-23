@@ -25,12 +25,14 @@ def lambda_handler(event, context):
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """
 
-    number = input("Enter number:\n")
-    try:
-        int(number)
-    except Exception:
-        # Noncompliant: has improper error handling.
-        pass
+    # try:
+    #     ip = requests.get("http://checkip.amazonaws.com/")
+    # except requests.RequestException as e:
+    #     # Send some context about this error to Lambda Logs
+    #     print(e)
+
+    #     raise e
+    
 
     return {
         "statusCode": 200,

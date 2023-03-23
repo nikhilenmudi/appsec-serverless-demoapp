@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "appsec-serverless-demoapp2"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-wdl7yfnnwft7"
+s3_prefix = "appsec-serverless-demoapp2"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
